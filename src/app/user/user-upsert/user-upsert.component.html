@@ -1,0 +1,65 @@
+<header>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>User Management System</h2>
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-dark float-end" (click)="goToList();">Back to List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Form to add and update user -->
+<!-- To-do: Add validations-->
+<div class="form-box mt-3">
+    <form class="form border rounded shadow p-3" [formGroup]="userForm">
+
+        <legend class="mt-2">
+            <!-- To-do -->
+            <h3>Add a new user</h3>
+        </legend>
+        <div>
+
+            <!-- First Name -->
+            <div class="form-group">
+                <label class="control-label" for="firstname">First Name</label>
+                <input type="text" formControlName="firstname" class="form-control" />
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group">
+                <label class="control-label" for="lastname">Last Name</label>
+
+                <input type="text" formControlName="lastname" class="form-control" />
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label class="control-label" for="address">Address</label>
+                <input type="text" formControlName="address" class="form-control" />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label class="control-label" for="email">Email</label>
+                <input type="text" formControlName="email" class="form-control" />
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label class="control-label" for="phone">Phone</label>
+                <input type="text" formControlName="phone" class="form-control" />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group text-center">
+                <button class="btn btn-dark mt-3" type="submit" (click)="onSubmit()"
+                    [disabled]="!userForm.valid">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

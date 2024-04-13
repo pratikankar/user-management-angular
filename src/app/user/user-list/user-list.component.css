@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+
+}
+
+.table {
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #9de09d;
+    color: #000;
+}
+

@@ -1,0 +1,22 @@
+.form-box {
+    width: 550px;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: #9de09d;
+    margin: 0px auto;
+}
+
+legend {
+    text-align: center;
+}
+
+.form {
+    width: 500px;
+    align-items: center;
+}
+
+.control-label {
+    font-weight: 800;
+    padding: 10px 0;
+}
+

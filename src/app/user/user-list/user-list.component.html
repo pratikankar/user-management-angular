@@ -1,0 +1,46 @@
+<header>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>User Management System</h2>
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-dark float-end" (click)="btnAddUser();">Add User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of users; let i = index">
+                        <td scope="row">{{i + 1}}</td>
+                        <td>{{data.firstname}} {{data.lastname}}</td>
+                        <td>{{data.email}}</td>
+                        <td>{{data.phone}}</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-warning btn-sm"
+                                (click)="editUser(data)">Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm ms-2"
+                                (click)="deleteUser(data.id)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

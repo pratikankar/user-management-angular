@@ -1,0 +1,44 @@
+{
+    "users": [
+      {
+        "id": "1",
+        "firstname": "Steve",
+        "lastname": "Rogers",
+        "address": "Brooklyn",
+        "email": "captain@gmail.com",
+        "phone": "6490853941"
+      },
+      {
+        "id": "2",
+        "firstname": "Tony",
+        "lastname": "Stark",
+        "address": "Manhattan",
+        "email": "ironman@gmail.com",
+        "phone": "7490853941"
+      },
+      {
+        "id": "3",
+        "firstname": "Natasha",
+        "lastname": "Romanoff",
+        "address": "Stalingrad",
+        "email": "bw@gmail.com",
+        "phone": "9490853941"
+      },
+      {
+        "id": "4",
+        "firstname": "Bruce",
+        "lastname": "Banner",
+        "address": "Dayton",
+        "email": "hulk@gmail.com",
+        "phone": "8490853941"
+      },
+      {
+        "id": "5",
+        "firstname": "Clint",
+        "lastname": "Barton",
+        "address": "Waverly",
+        "email": "hawkeye@gmail.com",
+        "phone": "6990853941"
+      }
+    ]
+}

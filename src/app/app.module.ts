@@ -7,6 +7,8 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserModule } from './user/user.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { DataService } from '../app/shared/services/data.service'
 
@@ -20,7 +22,13 @@ import { DataService } from '../app/shared/services/data.service'
     RouterModule,
     ReactiveFormsModule,
     UserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-center',
+      preventDuplicates: true
+    })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

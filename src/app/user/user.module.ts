@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       { path: 'userlist', component: UserListComponent},
       { path: 'userupsert', component: UserUpsertComponent}
-    ])
+    ]),
   ],
   exports: [UserListComponent]
 })

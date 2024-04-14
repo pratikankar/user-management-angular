@@ -7,16 +7,16 @@ There are two components,
 1. user-list - to show the list of users
 2. user-upsert - to add new user as well as edit existing user
 
-Services
+Services: 
 There is a service, DataService, which handles data.
 
-Interface
+Interface: 
 UserInterface is used for type casting
 
-Styling
+Styling: 
 Used Bootstrap and CSS for styling
 
-Toastr
+Toastr: 
 Used ngx-tostr for showing notifications
 
 
